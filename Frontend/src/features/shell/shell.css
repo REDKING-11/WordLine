@@ -1,0 +1,143 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: 40px 248px minmax(0, 1fr) 286px;
+  background: #1d1d1d;
+  color: #e8e2d8;
+}
+
+.app-shell.context-hidden {
+  grid-template-columns: 40px 248px minmax(0, 1fr);
+}
+
+.activity-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 6px;
+  border-right: 1px solid #343434;
+  background: #202020;
+}
+
+.activity-rail button {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #aaa39b;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.activity-rail button:hover,
+.activity-rail button.active {
+  color: #f5efe5;
+  background: #303030;
+}
+
+.workspace {
+  min-width: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.workspace-split {
+  display: grid;
+  grid-template-columns: minmax(420px, 1.08fr) minmax(420px, 0.92fr);
+  min-height: 100vh;
+}
+
+.workspace-pane {
+  display: grid;
+  grid-template-rows: 40px minmax(0, 1fr);
+  min-width: 0;
+  border-right: 1px solid #343434;
+  background: #1d1d1d;
+}
+
+.graph-workspace-pane {
+  border-right: 0;
+}
+
+.pane-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 6px 14px;
+  border-bottom: 1px solid #343434;
+  background: #2b2b2b;
+}
+
+.pane-tab button {
+  border: 0;
+  color: #bdb5ab;
+  background: transparent;
+}
+
+.pane-tab button:first-child {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pane-tab button.active {
+  color: #f4efe8;
+}
+
+.timeline-placeholder {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 40px;
+  border: 0;
+  border-radius: 0;
+  background: #1d1d1d;
+  box-shadow: none;
+}
+
+.timeline-placeholder h2 {
+  max-width: 680px;
+  font-size: 1.4rem;
+  text-transform: none;
+}
+
+.timeline-placeholder p {
+  max-width: 620px;
+  color: #756d64;
+  line-height: 1.6;
+}
+
+.empty-workspace {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 12px;
+  padding: 40px;
+}
+
+.empty-workspace h2 {
+  margin: 0;
+  color: #f4efe8;
+  font-size: 1.35rem;
+  text-transform: none;
+}
+
+.empty-workspace p {
+  max-width: 420px;
+  color: #756d64;
+  line-height: 1.55;
+}
+
+.empty-workspace button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 7px;
+  color: #fffdf8;
+  background: #7d6ae0;
+  font-weight: 800;
+}

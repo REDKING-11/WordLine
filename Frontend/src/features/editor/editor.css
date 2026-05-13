@@ -1,0 +1,180 @@
+.editor-pane {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 14px;
+  min-height: 0;
+  padding: 68px 38px;
+  border: 0;
+  border-radius: 0;
+  background: #1d1d1d;
+  box-shadow: none;
+}
+
+.editor-pane h2 {
+  margin-bottom: 18px;
+  color: #f4efe8;
+  font-size: 1.45rem;
+  text-transform: none;
+}
+
+.note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.note-meta span {
+  padding: 4px 8px;
+  border: 1px solid rgba(47, 75, 81, 0.18);
+  border-radius: 999px;
+  color: #2f4b51;
+  background: rgba(47, 75, 81, 0.08);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.markdown-codemirror-editor {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.markdown-codemirror-editor .cm-editor {
+  height: 100%;
+  color: #e8e2d8;
+  background: transparent;
+  font-size: 0.96rem;
+}
+
+.markdown-codemirror-editor .cm-editor.cm-focused {
+  outline: 0;
+}
+
+.markdown-codemirror-editor .cm-scroller {
+  overflow: auto;
+  padding-bottom: 80px;
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  line-height: 1.7;
+}
+
+.markdown-codemirror-editor .cm-content {
+  min-height: 100%;
+  padding: 0;
+  caret-color: #f4efe8;
+}
+
+.markdown-codemirror-editor .cm-line {
+  padding: 0;
+}
+
+.markdown-codemirror-editor .cm-selectionBackground,
+.markdown-codemirror-editor .cm-focused .cm-selectionBackground {
+  background: rgba(168, 131, 230, 0.24);
+}
+
+.markdown-codemirror-editor .cm-cursor {
+  border-left-color: #f4efe8;
+}
+
+.markdown-codemirror-editor .cm-placeholder {
+  color: #756d64;
+}
+
+.cm-wordline-wiki-link {
+  color: #a883e6;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.cm-wordline-missing-link {
+  color: #d19a66;
+  text-decoration-style: dashed;
+}
+
+.cm-wordline-md-marker {
+  color: #756d64;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cm-wordline-heading {
+  color: #f4efe8;
+  font-weight: 800;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cm-wordline-heading-1 {
+  font-size: 1.7rem;
+  line-height: 1.35;
+}
+
+.cm-wordline-heading-2 {
+  font-size: 1.38rem;
+  line-height: 1.38;
+}
+
+.cm-wordline-heading-3 {
+  font-size: 1.18rem;
+  line-height: 1.42;
+}
+
+.cm-wordline-heading-4,
+.cm-wordline-heading-5,
+.cm-wordline-heading-6 {
+  font-size: 1.02rem;
+  line-height: 1.48;
+}
+
+.cm-wordline-heading-line {
+  color: #f4efe8;
+  font-weight: 800;
+}
+
+.cm-wordline-bold {
+  color: #f5eee4;
+  font-weight: 800;
+}
+
+.cm-wordline-italic {
+  color: #efe3d4;
+  font-style: italic;
+}
+
+.cm-wordline-strike {
+  color: #9c9288;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.cm-wordline-inline-code {
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: #f6c177;
+  background: rgba(246, 193, 119, 0.12);
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.92em;
+}
+
+.cm-wordline-markdown-link {
+  color: #8ec7ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cm-wordline-blockquote-line {
+  padding-left: 12px;
+  border-left: 3px solid rgba(168, 131, 230, 0.58);
+  color: #cfc2de;
+}
+
+.cm-wordline-list-marker {
+  color: #a883e6;
+  font-weight: 800;
+}
+
+.cm-wordline-ordered-marker {
+  color: #a883e6;
+  font-weight: 700;
+}

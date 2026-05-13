@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "layouts": [
+    {
+      "id": "starter",
+      "name": "Starter Graph",
+      "positions": {
+        "mira-vale": { "x": -120, "y": 0 },
+        "lantern-hill": { "x": 120, "y": 0 },
+        "bellfall": { "x": 0, "y": -120 },
+        "archive-circle": { "x": 0, "y": 120 }
+      },
+      "filters": {
+        "types": ["character", "place", "event", "faction"],
+        "includeWikiLinks": true,
+        "includeRelationships": true
+      }
+    }
+  ]
+}

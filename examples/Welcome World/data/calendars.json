@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "calendars": [
+    {
+      "id": "welcome-calendar",
+      "name": "Welcome Calendar",
+      "description": "A small fictional calendar for the tutorial world.",
+      "eras": [
+        {
+          "id": "lantern-reckoning",
+          "name": "Lantern Reckoning",
+          "abbreviation": "LR",
+          "startsAtYear": 1
+        }
+      ],
+      "months": [
+        { "name": "Frostwake", "days": 30 },
+        { "name": "Rainmoot", "days": 30 },
+        { "name": "Greenreach", "days": 30 },
+        { "name": "Highsun", "days": 30 },
+        { "name": "Goldfall", "days": 30 },
+        { "name": "Emberwane", "days": 30 }
+      ],
+      "weekdays": ["Firstday", "Secondday", "Thirdday", "Fourthday", "Fifthday"],
+      "yearLength": 180
+    }
+  ]
+}

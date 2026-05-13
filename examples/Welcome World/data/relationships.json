@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "relationshipTypes": [
+    {
+      "id": "member-of",
+      "label": "Member of",
+      "directed": true,
+      "description": "A person belongs to an organization, faction, group, or household."
+    },
+    {
+      "id": "witnessed",
+      "label": "Witnessed",
+      "directed": true,
+      "description": "A person directly witnessed an event."
+    },
+    {
+      "id": "located-at",
+      "label": "Located at",
+      "directed": true,
+      "description": "An event or entity is associated with a place."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-mira-archive",
+      "type": "member-of",
+      "from": "mira-vale",
+      "to": "archive-circle",
+      "canon": true
+    },
+    {
+      "id": "rel-mira-bellfall",
+      "type": "witnessed",
+      "from": "mira-vale",
+      "to": "bellfall",
+      "canon": true,
+      "source": "Mira Vale.md"
+    },
+    {
+      "id": "rel-bellfall-lantern-hill",
+      "type": "located-at",
+      "from": "bellfall",
+      "to": "lantern-hill",
+      "canon": true
+    }
+  ]
+}

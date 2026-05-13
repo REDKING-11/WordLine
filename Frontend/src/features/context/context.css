@@ -1,0 +1,182 @@
+.right-sidebar {
+  border-left: 1px solid #343434;
+  padding: 14px;
+}
+
+.context-panel-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #343434;
+}
+
+.context-panel-header h2 {
+  margin: 2px 0 0;
+  color: #f4efe8;
+  font-size: 0.95rem;
+  text-transform: none;
+}
+
+.context-panel-header button,
+.context-restore-button {
+  border: 1px solid #3f3f3f;
+  border-radius: 6px;
+  color: #d9d1c7;
+  background: #303030;
+  font-size: 0.76rem;
+}
+
+.context-panel-header button {
+  padding: 5px 8px;
+}
+
+.context-restore-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  padding: 7px 9px;
+}
+
+.metadata-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.metadata-list div {
+  display: grid;
+  gap: 3px;
+}
+
+.metadata-list dt {
+  color: #756d64;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.metadata-list dd {
+  margin: 0;
+  color: #e8e2d8;
+}
+
+.context-list {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.context-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(37, 37, 37, 0.1);
+  color: #d9d1c7;
+}
+
+.context-list button {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: #403936;
+  background: transparent;
+  text-align: left;
+}
+
+.relationship-list li {
+  display: grid;
+  gap: 3px;
+}
+
+.relationship-list strong {
+  color: #7b4c38;
+}
+
+.relationship-list span {
+  color: #756d64;
+}
+
+.legend {
+  display: grid;
+  gap: 8px;
+  color: #d9d1c7;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-line {
+  display: inline-block;
+  width: 28px;
+  border-top: 2px solid;
+}
+
+.legend-line.wiki {
+  border-color: rgba(67, 90, 94, 0.58);
+  border-top-style: dashed;
+}
+
+.legend-line.relationship {
+  border-color: rgba(160, 84, 53, 0.8);
+}
+
+.graph-controls-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.graph-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.graph-stat-row span {
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 253, 248, 0.08);
+  border-radius: 8px;
+  color: #d9d1c7;
+  background: #2e2e2e;
+  text-align: center;
+}
+
+.toggle-control,
+.slider-control {
+  display: grid;
+  gap: 6px;
+  color: #d9d1c7;
+}
+
+.toggle-control {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.toggle-control input {
+  width: 18px;
+  height: 18px;
+  accent-color: #a883e6;
+}
+
+.slider-control span {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.86rem;
+}
+
+.slider-control strong {
+  color: #a883e6;
+  font-weight: 700;
+}
+
+.slider-control input {
+  width: 100%;
+  accent-color: #a883e6;
+}

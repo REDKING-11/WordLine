@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "views": [
+    {
+      "id": "canon-overview",
+      "name": "Canon Overview",
+      "kind": "graph",
+      "filters": {
+        "canon": true,
+        "types": ["character", "place", "event", "faction"]
+      }
+    },
+    {
+      "id": "bellfall-thread",
+      "name": "Bellfall Thread",
+      "kind": "timeline",
+      "filters": {
+        "tags": ["turning-point", "mystery"]
+      }
+    }
+  ]
+}

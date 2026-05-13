@@ -1,0 +1,125 @@
+.graph-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+  padding: 18px;
+  border: 0;
+  border-radius: 0;
+  background: #1d1d1d;
+  box-shadow: none;
+}
+
+.panel-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.panel-header span {
+  color: #756d64;
+}
+
+.panel-header h2 {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  text-transform: none;
+}
+
+.graph-canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  border-radius: 0;
+  background: #1d1d1d;
+  touch-action: none;
+}
+
+.graph-edge.wiki-link line {
+  stroke: rgba(67, 90, 94, 0.42);
+  stroke-dasharray: 5 6;
+}
+
+.graph-edge.relationship line {
+  stroke: rgba(160, 84, 53, 0.72);
+}
+
+.graph-edge.dimmed {
+  opacity: 0.18;
+}
+
+.graph-edge #graph-arrow-wiki,
+.graph-edge #graph-arrow-relationship {
+  overflow: visible;
+}
+
+#graph-arrow-wiki path {
+  fill: rgba(67, 90, 94, 0.72);
+}
+
+#graph-arrow-relationship path {
+  fill: rgba(160, 84, 53, 0.92);
+}
+
+.graph-edge text {
+  fill: #7b4c38;
+  font-size: 10px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: #f8f5ee;
+  stroke-width: 4px;
+  text-anchor: middle;
+}
+
+.graph-node {
+  outline: none;
+  cursor: grab;
+  transition: opacity 120ms ease;
+}
+
+.graph-node:active {
+  cursor: grabbing;
+}
+
+.graph-node circle {
+  fill: #6b6b6b;
+  stroke: transparent;
+  stroke-width: 2;
+}
+
+.graph-node.selected circle {
+  fill: #a883e6;
+  stroke: transparent;
+  stroke-width: 3;
+}
+
+.graph-node.missing circle {
+  fill: #343434;
+  opacity: 0.7;
+}
+
+.graph-node.missing text {
+  fill: #7e7870;
+}
+
+.graph-node.dimmed {
+  opacity: 0.28;
+}
+
+.graph-node text {
+  fill: #d9d1c7;
+  font-size: 10px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.graph-node.selected text {
+  fill: #fffdf8;
+}
+
+.graph-node .node-type {
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.75;
+}

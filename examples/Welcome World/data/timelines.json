@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "timelines": [
+    {
+      "id": "main",
+      "name": "Welcome World Timeline",
+      "calendar": "welcome-calendar",
+      "events": [
+        {
+          "id": "event-old-road-found",
+          "title": "The old road is rediscovered",
+          "note": "Lantern Hill.md",
+          "date": {
+            "era": "Lantern Reckoning",
+            "year": 11,
+            "month": "Goldfall",
+            "day": 18
+          },
+          "type": "discovery",
+          "tags": ["old-road"]
+        },
+        {
+          "id": "event-bellfall",
+          "title": "The Bellfall",
+          "note": "The Bellfall.md",
+          "date": {
+            "era": "Lantern Reckoning",
+            "year": 12,
+            "month": "Emberwane",
+            "day": 3
+          },
+          "type": "mystery",
+          "tags": ["turning-point"]
+        },
+        {
+          "id": "event-mira-joins-circle",
+          "title": "Mira joins the Archive Circle",
+          "note": "Mira Vale.md",
+          "date": {
+            "era": "Lantern Reckoning",
+            "year": 12,
+            "month": "Emberwane",
+            "day": 21
+          },
+          "type": "character",
+          "tags": ["cartographer", "scholars"]
+        }
+      ]
+    }
+  ]
+}

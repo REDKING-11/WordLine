@@ -1,0 +1,257 @@
+.startup-shell {
+  display: grid;
+  place-items: center;
+  padding: 48px 24px;
+  color: #f4f1eb;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(101, 137, 132, 0.22), transparent 28%),
+    #1d1c1b;
+}
+
+.startup-card {
+  display: grid;
+  justify-items: center;
+  width: min(520px, 100%);
+}
+
+.startup-logo {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
+
+.startup-logo span {
+  width: 66px;
+  height: 82px;
+  border-radius: 38% 62% 48% 52% / 42% 42% 58% 58%;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.42), transparent 36%),
+    linear-gradient(210deg, #89c2b6, #a35d3b 55%, #2f4b51);
+  box-shadow:
+    inset -14px -14px 22px rgba(18, 23, 24, 0.38),
+    0 20px 36px rgba(0, 0, 0, 0.28);
+  transform: rotate(11deg);
+}
+
+.startup-logo.small {
+  width: 78px;
+  height: 78px;
+  margin-bottom: 12px;
+}
+
+.startup-logo.small span {
+  width: 52px;
+  height: 64px;
+}
+
+.startup-card h1 {
+  color: #fffdf8;
+  font-size: 2rem;
+}
+
+.version-label {
+  margin-top: 4px;
+  color: #cfc8bc;
+}
+
+.primary-start {
+  width: 196px;
+  margin: 28px 0 10px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 6px;
+  color: #fffdf8;
+  background: #7d6ae0;
+  font-weight: 700;
+}
+
+.startup-options {
+  display: grid;
+  width: 100%;
+  margin-top: 0;
+  padding: 18px 20px;
+  border-radius: 10px;
+  background: #242322;
+}
+
+.startup-option {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 100px;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 253, 248, 0.1);
+}
+
+.startup-option:last-child {
+  border-bottom: 0;
+}
+
+.startup-option h2 {
+  margin-bottom: 4px;
+  color: #fffdf8;
+  font-size: 0.98rem;
+  text-transform: none;
+}
+
+.startup-option p,
+.startup-notice {
+  color: #cfc8bc;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.startup-option button {
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 253, 248, 0.1);
+  border-radius: 6px;
+  color: #fffdf8;
+  background: #3a3938;
+}
+
+.startup-option button:hover {
+  background: #4a4846;
+}
+
+.startup-footer {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px 0;
+}
+
+.startup-footer span {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(255, 253, 248, 0.36);
+  border-radius: 50%;
+  color: #cfc8bc;
+  font-size: 0.78rem;
+}
+
+.startup-footer select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 253, 248, 0.12);
+  border-radius: 6px;
+  color: #fffdf8;
+  background: #3a3938;
+}
+
+.startup-notice {
+  width: 100%;
+  min-height: 20px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.create-card {
+  justify-items: stretch;
+  width: min(560px, 100%);
+}
+
+.create-card > .startup-logo,
+.create-card > h1,
+.create-card > .version-label {
+  justify-self: center;
+}
+
+.back-button {
+  justify-self: start;
+  margin: 26px 0 10px;
+  padding: 0;
+  border: 0;
+  color: #cfc8bc;
+  background: transparent;
+}
+
+.create-title {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.create-title h2 {
+  margin: 0;
+  color: #fffdf8;
+  font-size: 1.05rem;
+  text-transform: none;
+}
+
+.create-title p {
+  color: #cfc8bc;
+  font-size: 0.88rem;
+}
+
+.create-form {
+  display: grid;
+  padding: 18px 20px;
+  border-radius: 10px;
+  background: #242322;
+}
+
+.create-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 18px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 253, 248, 0.1);
+}
+
+.create-row:last-child {
+  border-bottom: 0;
+}
+
+.create-row span {
+  display: grid;
+  gap: 4px;
+}
+
+.create-row strong {
+  color: #fffdf8;
+}
+
+.create-row small {
+  color: #cfc8bc;
+  line-height: 1.4;
+}
+
+.create-row input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 253, 248, 0.1);
+  border-radius: 6px;
+  color: #fffdf8;
+  background: #302f2e;
+}
+
+.location-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 82px;
+  gap: 8px;
+}
+
+.location-control button {
+  border: 1px solid rgba(255, 253, 248, 0.1);
+  border-radius: 6px;
+  color: #fffdf8;
+  background: #3a3938;
+}
+
+.create-submit {
+  justify-self: center;
+  margin-top: 12px;
+}
+
+.create-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
